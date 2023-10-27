@@ -42,29 +42,30 @@ Follow these steps to install and run the Stock Tracker Application:
 2. **Navigate to the Project Directory:**
    Change your current directory to the newly cloned project folder:
 
-   ```bash
-   cd stock-tracker
+    ```bash
+    cd stock-tracker
 
-3. **Database Configuration:**
-   Configure the database settings by editing the application.properties file. Replace the following properties with your database information:
+3. **Build Project**
+   In the project's root directory, execute the following command to build the application and generate a JAR (Java Archive) file:
 
-   ```bash
-   spring.datasource.url=jdbc:postgresql://localhost:5432/stock_tracker
-   spring.datasource.username=username
-   spring.datasource.password=password
+    ```bash
+    mvn clean package -DskipTests
 
-  - spring.datasource.url: Set the JDBC URL of your PostgreSQL database.
-  - spring.datasource.username: Specify your PostgreSQL database username.
-  - spring.datasource.password: Provide your database password.
+  This will compile the project, run the tests (if any), and package it into a JAR file. Move the generated JAR file to the Docker directory (src/main/docker) using the following command
 
-Make sure your PostgreSQL database server is running, and the provided information matches your database setup.
+    ```bash
+    mv target/stock_tracker-0.0.1-SNAPSHOT.jar src/main/docker
+    
+  Change your current directory to the Docker directory:
+  
+    ```bash
+    cd src/main/docker
 
-4. **Run the Application**
-    You can run the application using Maven. Execute the following command:
+  Run the application as a docker image:
 
-   ```bash
-   mvn spring-boot:run
-
+    ```bash
+    docker-compose up
+    
 ## Usage
 
 The Stock Tracker Application provides a set of endpoints for managing products, users, and stocks. These endpoints are accessible through HTTP requests. You can interact with the application using a tool like [cURL](https://curl.se/) or by utilizing the provided Swagger UI for a user-friendly interface.
