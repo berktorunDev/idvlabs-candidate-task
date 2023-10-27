@@ -51,8 +51,8 @@ bin/
 .DS_Store
 
 # Spring Boot tarafından oluşturulan uygulama özelliklerini saklayan dosyaları görmezden gel
-application.properties
-application.yml
+#application.properties
+#application.yml
 
 # Log dosyalarını ve istemciye ait dosyaları görmezden gel
 log/
