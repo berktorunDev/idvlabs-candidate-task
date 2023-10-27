@@ -1,0 +1,67 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# IntelliJ ve Eclipse gibi IDE'ler tarafından oluşturulan dosyaları ve klasörleri görmezden gel
+.vscode/
+.idea/
+.classpath
+.project
+.settings/
+
+# Derleme ve çalışma zamanı dosyalarını görmezden gel
+bin/
+*.jar
+*.war
+
+# Maven veya Gradle tarafından oluşturulan dosyaları görmezden gel
+/.mvn/
+/build/
+.gradle/
+.DS_Store
+
+# Spring Boot tarafından oluşturulan uygulama özelliklerini saklayan dosyaları görmezden gel
+application.properties
+application.yml
+
+# Log dosyalarını ve istemciye ait dosyaları görmezden gel
+log/
+logs/
+*.log
+*.log.*
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+System Volume Information/

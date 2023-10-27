@@ -1,0 +1,19 @@
+package com.stock.tracker.enums;
+
+public enum ProductCategory {
+    ELECTRONICS,
+    CLOTHING,
+    HOME_AND_GARDEN,
+    SPORTS_AND_OUTDOORS,
+    BOOKS,
+    BEAUTY_AND_PERSONAL_CARE,
+    TOYS_AND_GAMES,
+    AUTOMOTIVE,
+    HEALTH_AND_WELLNESS,
+    APPLIANCES,
+    FURNITURE,
+    FOOD_AND_BEVERAGES,
+    JEWELRY,
+    PET_SUPPLIES,
+    OFFICE_SUPPLIES
+}
